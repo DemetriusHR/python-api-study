@@ -7,6 +7,11 @@ class Pessoa(Resource):
 
         response = collectionPessoa.find_one({ "cpfPessoa": cpf_pessoa }, { "_id": 0 })
 
-        result = { 'status': 'sucess', 'pessoa': response }
+        result = {}
+
+        if response is None:
+            result = { 'status': 'error', 'pessoa': None }
+        else:
+            result = { 'status': 'sucess', 'pessoa': response }
 
         return result

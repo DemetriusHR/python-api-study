@@ -1,3 +1,4 @@
 from pymongo import MongoClient
+from settings import LOCAL_DATABASE, PORT_DATABASE
 
-collectionPessoa = MongoClient('localhost', 27017).teste.Pessoa
+collectionPessoa = MongoClient(LOCAL_DATABASE, PORT_DATABASE).teste.Pessoa

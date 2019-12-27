@@ -1,0 +1,3 @@
+LOCAL_DATABASE = 'localhost'
+
+PORT_DATABASE = 27017

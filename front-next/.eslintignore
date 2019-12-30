@@ -1,0 +1,15 @@
+/build/**
+/node_modules/
+**/node_modules/**
+**/build/**
+**/fontawesome/**
+*.json
+*.ico
+*.html
+*.png
+*.jpeg
+*.jpg
+*.pdf
+*.xml
+*.svg
+.lintstagedrc.js
